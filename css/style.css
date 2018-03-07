@@ -77,7 +77,7 @@ nav ul {
         width: 100%;
         justify-content: space-around;
         position: static;
-        font-size: 8px;
+        font-size: 10px;
         margin: 0;
     }
 }
@@ -135,7 +135,7 @@ nav a {
     break-inside: avoid;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .quero-agora {
         padding: 5px 2px;
     }
@@ -154,6 +154,8 @@ header {
     align-items: center;
 }
 
+
+
 header div {
     width: 50%;
     align-items: center;
@@ -164,6 +166,31 @@ header p {
     margin-bottom: 40px;
     font-size: 17px;
     font-weight: normal;
+}
+
+@media (max-width: 320px) {
+    header {
+        min-height: 50vh;
+        background: url(../img/bg-banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header div {
+        width: 80%;
+        align-items: center;
+        color: white;
+    }
+    header p {
+        margin-bottom: 20px;
+        font-size: 12px;
+        font-weight: normal;
+    }
 }
 
 header a {
@@ -181,13 +208,14 @@ header a {
     header a {
         font-size: 80%;
         width: 50%;
-        padding: 3px;
+        padding: 5px;
     }
 }
 @media (max-width: 320px) {
     header a {
-        font-size: 5px;
+        font-size: 10px;
         width: 50%;
+        padding: 5px;
     }
 }
 
